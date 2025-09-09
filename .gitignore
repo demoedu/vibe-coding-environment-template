@@ -1,0 +1,17 @@
+# misc
+.DS_Store
+*.pem
+
+# env files (can opt-in for committing if needed)
+.env
+.env.development*
+.env.test*
+.env.production*
+.env.local*
+
+# vscode
+.vscode/
+
+# Git related
+*.patch
+*.log
