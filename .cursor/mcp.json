@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "bunx",
+      "args": ["@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "context7": {
+      "command": "bunx",
+      "args": ["@upstash/context7-mcp"]
+    },
+    "playwright": {
+      "command": "bunx",
+      "args": ["@playwright/mcp@latest"]
+    },
+    "supabase": {
+      "command": "bunx",
+      "args": [
+        "@supabase/mcp-server-supabase@latest",
+        "--read-only",
+        "--project-ref=your_project_ref"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "your_personal_access_token"
+      }
+    },
+    "@21st-dev/magic": {
+      "command": "npx",
+      "args": ["-y", "@21st-dev/magic@latest", "API_KEY=\"your_api_key\""]
+    },
+    "mem0-memory-mcp": {
+      "command": "bunx",
+      "args": [
+        "@smithery/cli@latest",
+        "run",
+        "@mem0ai/mem0-memory-mcp",
+        "--key",
+        "your_smithery_api_key",
+        "--profile",
+        "ok-marmoset-tfEaWS"
+      ]
+    }
+  }
+}
